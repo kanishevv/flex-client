@@ -1,0 +1,48 @@
+.q-checkbox {
+    --toggle-size: var(--q-toggle-size-small);
+
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+  font-family: var(--q-input-font-family);
+  font-weight: var(--q-input-font-weight);
+  color: var(--q-input-label-color);
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.q-checkbox__control {
+  flex: 0 0 auto;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--toggle-size);
+  height: var(--toggle-size);
+  border: solid var(--q-input-border-width) var(--q-input-border-color);
+  border-radius: 2px;
+  background-color: var(--q-input-background-color);
+  color: var(--q-color-neutral-0);
+  transition:
+    var(--q-transition-fast) border-color,
+    var(--q-transition-fast) background-color,
+    var(--q-transition-fast) color,
+    var(--q-transition-fast) box-shadow;
+}
+
+.q-checkbox__input {
+  position: absolute;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+.q-checkbox__label {
+  display: inline-block;
+  color: var(--q-input-label-color);
+  line-height: var(--toggle-size);
+  margin-inline-start: 0.5em;
+  user-select: none;
+  -webkit-user-select: none;
+}

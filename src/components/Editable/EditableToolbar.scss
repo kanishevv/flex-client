@@ -1,0 +1,36 @@
+.q-editable-toolbar {
+  //   --top: unset;
+  //   --left: unset;
+
+  // //   position: absolute;
+  //   top: var(--top);
+  //   left: var(--left);
+  position: absolute;
+  background: var(--q-panel-background-color);
+  border-radius: var(--q-border-radius-medium);
+  -webkit-transform: translateX(-25%);
+  transform: translateX(-25%);
+
+  &__item--link {
+    .q-dropdown__panel {
+      box-shadow: unset;
+      padding: var(--q-spacing-x-small);
+      background: var(--q-panel-background-color);
+      border-radius: var(--q-border-radius-medium);
+    }
+  }
+}
+
+.slide-fade-enter-active {
+  transition: all 0.1s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.1s cubic-bezier(1, 0.1, 0.2, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(4px);
+  opacity: 0;
+}

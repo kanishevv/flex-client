@@ -1,0 +1,58 @@
+.q-button-icon {
+  --color: inherit;
+  --text-size: var(--q-font-size-2x-small);
+  --direction: row;
+  --background: none;
+
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: var(--direction);
+  background: var(--background);
+  border: none;
+  border-radius: var(--q-border-radius-medium);
+  font-size: inherit;
+  color: var(--color);
+  padding: var(--q-spacing-x-small);
+  cursor: pointer;
+  transition: var(--q-transition-x-fast) color;
+  -webkit-appearance: none;
+  font-family: var(--q-input-font-family);
+  font-weight: var(--q-font-weight-semibold);
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.q-button__text {
+  margin-top: 0.2rem;
+  font-size: var(--text-size);
+}
+
+.q-button-icon:hover:not(.q-button-icon--disabled),
+.q-button-icon:focus-visible:not(.q-button-icon--disabled) {
+  cursor: pointer;
+  color: var(--q-color-primary-600);
+}
+
+.q-button-icon:active:not(.q-button-icon--disabled) {
+  color: var(--q-color-primary-700);
+}
+
+.q-button-icon:focus {
+  outline: none;
+}
+
+.q-button-icon--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.q-button-icon:focus-visible {
+  outline: var(--q-focus-ring);
+  outline-offset: var(--q-focus-ring-offset);
+}
+
+.q-button-icon__icon {
+  pointer-events: none;
+}

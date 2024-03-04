@@ -1,0 +1,60 @@
+.q-form-control {
+  width: 100%;
+}
+
+.q-form-control .q-form-control__label {
+  display: none;
+}
+
+.q-form-control .q-form-control__help-text {
+  display: none;
+}
+
+/* Label */
+.q-form-control--has-label .q-form-control__label {
+  display: inline-block;
+  color: var(--q-input-label-color);
+  margin-bottom: var(--q-spacing-3x-small);
+}
+
+.q-form-control--has-label.q-form-control--small .q-form-control__label {
+  font-size: var(--q-input-label-font-size-small);
+}
+
+.q-form-control--has-label.q-form-control--medium .q-form-control__label {
+  font-size: var(--q-input-label-font-size-medium);
+}
+
+.q-form-control--has-label.q-form-control--large .q-form-control__label {
+  font-size: var(--q-input-label-font-size-large);
+}
+
+// TODO:
+:host([required]) .q-form-control--has-label .q-form-control__label::after {
+  content: var(--q-input-required-content);
+  margin-inline-start: var(--q-input-required-content-offset);
+  color: var(--q-input-required-content-color);
+}
+
+/* Help text */
+.q-form-control--has-help-text .q-form-control__help-text {
+  display: block;
+  color: var(--q-input-help-text-color);
+  margin-top: var(--q-spacing-3x-small);
+}
+
+.q-form-control--has-help-text.q-form-control--small .q-form-control__help-text {
+  font-size: var(--q-input-help-text-font-size-small);
+}
+
+.q-form-control--has-help-text.q-form-control--medium .q-form-control__help-text {
+  font-size: var(--q-input-help-text-font-size-medium);
+}
+
+.q-form-control--has-help-text.q-form-control--large .q-form-control__help-text {
+  font-size: var(--q-input-help-text-font-size-large);
+}
+
+.q-form-control--has-help-text.q-form-control--radio-group .q-form-control__help-text {
+  margin-top: var(--q-spacing-2x-small);
+}

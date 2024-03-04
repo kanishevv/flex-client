@@ -1,0 +1,16 @@
+.q-menu {
+  --menu-background: var(--q-panel-background-color);
+  --menu-border-radius: var(--q-border-radius-medium);
+  --menu-padding: var(--q-spacing-x-small) 0;
+  --menu-border-width: var(--q-panel-border-width);
+  --menu-border-color: var(--q-panel-border-color);
+
+  display: block;
+  position: relative;
+  background: var(--menu-background);
+  border: solid var(--menu-border-width) var(--menu-border-color);
+  border-radius: var(--menu-border-radius);
+  padding: var(--menu-padding);
+  overflow: auto;
+  overscroll-behavior: none;
+}

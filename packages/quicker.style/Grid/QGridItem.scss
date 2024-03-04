@@ -1,0 +1,17 @@
+.q-grid-item {
+  &--center-xs {
+    justify-content: center;
+  }
+
+  &--end-xs {
+    justify-content: flex-end;
+  }
+
+  &--middle-xs {
+    align-items: center;
+  }
+
+  &--between-xs {
+    justify-content: space-between;
+  }
+}
